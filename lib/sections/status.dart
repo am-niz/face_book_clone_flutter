@@ -15,6 +15,16 @@ class StatusSection extends StatelessWidget {
           height: 50,
         ),
       ),
+      title: TextField(
+        decoration: InputDecoration(
+          hintText: "What's on your mind?",
+          hintStyle: TextStyle(color: Colors.black),
+          enabledBorder: InputBorder.none,
+          focusedBorder: InputBorder.none,
+          errorBorder: InputBorder.none,
+          disabledBorder: InputBorder.none,
+        ),
+      ),
     );
   }
 }
