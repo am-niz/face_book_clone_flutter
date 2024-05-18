@@ -34,9 +34,14 @@ class Home extends StatelessWidget {
           ],
         ),
         body: ListView(
-          children: [
+          children: <Widget>[
             StatusSection(),
-          ],),
+            Divider(
+              thickness: 1,
+              color: Colors.grey[300],
+            ),
+          ],
+        ),
       ),
     );
   }
