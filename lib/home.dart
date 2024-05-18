@@ -1,5 +1,7 @@
+import 'package:facebook_clone/sections/header_button_section.dart';
 import 'package:facebook_clone/sections/status.dart';
 import 'package:facebook_clone/widgets/app_bar_button.dart';
+import 'package:facebook_clone/widgets/divider.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -36,10 +38,9 @@ class Home extends StatelessWidget {
         body: ListView(
           children: <Widget>[
             StatusSection(),
-            Divider(
-              thickness: 1,
-              color: Colors.grey[300],
-            ),
+            MainDivider(thickness: 1, dividerColor: Colors.grey,),
+            HeaderButtonSection(),
+            MainDivider(thickness: 10, dividerColor: Colors.grey)
           ],
         ),
       ),
