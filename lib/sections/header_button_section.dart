@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HeaderButtonSection extends StatelessWidget {
   const HeaderButtonSection({super.key});
@@ -20,15 +19,20 @@ class HeaderButtonSection extends StatelessWidget {
     );
   }
 
-  Widget headDivider({required double thickness, required Color dividerColor}) {
-    return VerticalDivider(
-      thickness: 1,
-      color: Colors.grey[300],
-    );
-  }
+  // Widget headDivider({required double thickness, required Color dividerColor}) {
+  //   return VerticalDivider(
+  //     thickness: 1,
+  //     color: Colors.grey[300],
+  //   );
+  // }
+
 
   @override
   Widget build(BuildContext context) {
+      Widget verticleDivider = VerticalDivider(
+      thickness: 1,
+      color: Colors.grey[300],
+  );
     return Container(
       height: 40,
       child: Row(
@@ -41,10 +45,7 @@ class HeaderButtonSection extends StatelessWidget {
               buttonText: "Live",
               buttonIcon: Icons.video_call,
               buttonColor: Colors.red),
-          headDivider(
-            thickness: 1,
-            dividerColor: Colors.grey,
-          ),
+              verticleDivider,
           headerButton(
             buttonAction: () {
               print("Photobuttonclicked..");
@@ -53,7 +54,7 @@ class HeaderButtonSection extends StatelessWidget {
             buttonIcon: Icons.photo_library,
             buttonColor: Colors.green,
           ),
-          headDivider(thickness: 1, dividerColor: Colors.grey),
+          verticleDivider,
           headerButton(
             buttonAction: () {
               print("Roombuttonclicked..");
