@@ -39,11 +39,11 @@ class Home extends StatelessWidget {
         body: ListView(
           children: <Widget>[
             StatusSection(),
-            MainDivider(thickness: 1, dividerColor: Colors.grey,),
+            MainDivider(thickness: 1),
             HeaderButtonSection(),
-            MainDivider(thickness: 10, dividerColor: Colors.grey),
+            MainDivider(thickness: 10),
             RoomSection(),
-            MainDivider(thickness: 10, dividerColor: Colors.grey),
+            MainDivider(thickness: 10),
           ],
         ),
       ),

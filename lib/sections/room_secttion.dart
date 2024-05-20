@@ -1,3 +1,5 @@
+import 'package:facebook_clone/assets.dart';
+import 'package:facebook_clone/widgets/avatar.dart';
 import 'package:flutter/material.dart';
 
 class RoomSection extends StatelessWidget {
@@ -11,13 +13,34 @@ class RoomSection extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         padding: EdgeInsets.all(10),
         children: [
-          createRoom(),
+          createRoomButton(),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          SizedBox(width: 10),
+          Avatar(avatarPic: dq),
+          Avatar(avatarPic: dq),
+          Avatar(avatarPic: dq),
+          Avatar(avatarPic: dq),
         ],
       ),
     );
   }
 
-  Widget createRoom() {
+  Widget createRoomButton() {
     return OutlinedButton.icon(
       onPressed: () {
         print("Room Created");
