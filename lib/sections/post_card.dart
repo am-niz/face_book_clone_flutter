@@ -21,46 +21,63 @@ class PostCard extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          ListTile(
-            leading: Avatar(
-              avatarPic: avatar,
-              isStatus: false,
-            ),
-            title: Row(
-              children: [
-                Text(
-                  avatarName,
-                  style: TextStyle(color: Colors.black, fontSize: 16),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                const BlueTick(),
-              ],
-            ),
-            subtitle: Row(
-              children: [
-                Text(
-                  postTime,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Icon(
-                  Icons.public,
-                  color: Colors.grey[700],
-                  size: 15,
-                )
-              ],
-            ),
-            trailing: IconButton(
-              onPressed: () {
-                print("postcard option cliked");
-              },
-              icon: Icon(Icons.more_horiz, color: Colors.grey.shade700),
-            ),
-          ),
+          postCardHead(),
+          titleSection(),
         ],
+      ),
+    );
+  }
+
+  Widget postCardHead() {
+    return ListTile(
+      leading: Avatar(
+        avatarPic: avatar,
+        isStatus: false,
+      ),
+      title: Row(
+        children: [
+          Text(
+            avatarName,
+            style: TextStyle(color: Colors.black, fontSize: 16),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          const BlueTick(),
+        ],
+      ),
+      subtitle: Row(
+        children: [
+          Text(
+            postTime,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Icon(
+            Icons.public,
+            color: Colors.grey[700],
+            size: 15,
+          )
+        ],
+      ),
+      trailing: IconButton(
+        onPressed: () {
+          print("postcard option cliked");
+        },
+        icon: Icon(Icons.more_horiz, color: Colors.grey.shade700),
+      ),
+    );
+  }
+
+  Widget titleSection() {
+    return Container(
+      child: Text(
+        "Happy diwaly",
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 16,
+        ),
       ),
     );
   }
