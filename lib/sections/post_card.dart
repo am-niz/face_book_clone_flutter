@@ -1,9 +1,10 @@
 import 'package:facebook_clone/assets.dart';
+import 'package:facebook_clone/sections/header_button_section.dart';
 import 'package:facebook_clone/widgets/avatar.dart';
 import 'package:facebook_clone/widgets/blue_icon.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:facebook_clone/widgets/divider.dart';
+import 'package:facebook_clone/widgets/header_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class PostCard extends StatelessWidget {
   final String avatar;
@@ -33,6 +34,33 @@ class PostCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // assign the bottom like, comment share button to a widget postBottom
+    Widget postBottom = HeaderButtonSection(
+      button1: headerButton(
+        buttonText: "Like",
+        buttonIcon: Icons.thumb_up_outlined,
+        buttonAction: () {
+          print("Post Liked");
+        },
+        buttonColor: Colors.grey.shade700,
+      ),
+      button2: headerButton(
+        buttonText: "Comment",
+        buttonIcon: Icons.message_outlined,
+        buttonAction: () {
+          print("Open comment");
+        },
+        buttonColor: Colors.grey.shade700,
+      ),
+      button3: headerButton(
+        buttonText: "Share",
+        buttonIcon: Icons.share_outlined,
+        buttonAction: () {
+          print("Share Option");
+        },
+        buttonColor: Colors.grey.shade700,
+      ),
+    );
     return Container(
       child: Column(
         children: [
@@ -40,6 +68,9 @@ class PostCard extends StatelessWidget {
           titleSection(),
           imageSection(),
           footerSection(),
+          MainDivider(thickness: 2),
+          postBottom,
+          MainDivider(thickness: 10),
         ],
       ),
     );
@@ -49,7 +80,7 @@ class PostCard extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(
         top: 5,
-        bottom: 5,
+        // bottom: 5,
       ),
       child: Row(
         children: [
@@ -68,7 +99,9 @@ class PostCard extends StatelessWidget {
           ),
           Container(
             // color: Colors.black,
-            padding: EdgeInsets.only(left: 92,),
+            padding: EdgeInsets.only(
+              left: 67,
+            ),
             child: Row(
               children: [
                 postTexts(comments),
@@ -168,16 +201,18 @@ class PostCard extends StatelessWidget {
   }
 
   Widget titleSection() {
-    return Container(
-      padding: EdgeInsets.only(bottom: 5),
-      child: Text(
-        posttitile,
-        style: TextStyle(
-          color: Colors.black,
-          fontSize: 16,
-        ),
-      ),
-    );
+    return posttitile != ""
+        ? Container(
+            padding: EdgeInsets.only(bottom: 5, left: 10, right: 10, top: 10),
+            child: Text(
+              posttitile,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 16,
+              ),
+            ),
+          )
+        : SizedBox(height: 5);
   }
 
   Widget imageSection() {

@@ -11,7 +11,7 @@ class MainDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Divider(
       thickness: thickness,
-      color: Colors.grey.shade300,
+      color: Colors.grey.shade400,
     );
   }
 }
