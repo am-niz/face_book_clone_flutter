@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class BlueTick extends StatelessWidget {
-  const BlueTick({super.key});
+class BlueIcon extends StatelessWidget {
+  final IconData icon;
+  const BlueIcon({super.key, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +13,8 @@ class BlueTick extends StatelessWidget {
         color: Colors.blue,
         shape: BoxShape.circle,
       ),
-      child: const Icon(
-        Icons.check,
+      child: Icon(
+        icon,
         color: Colors.white,
         size: 10,
       ),

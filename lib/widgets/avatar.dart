@@ -4,11 +4,16 @@ class Avatar extends StatelessWidget {
   final String avatarPic;
   final bool isStatus;
   final bool displayBorder;
+  final double height;
+  final double width;
+
   const Avatar({
     super.key,
     required this.avatarPic,
     required this.isStatus,
     this.displayBorder = false,
+    required this.height,
+    required this.width,
   });
 
   @override
@@ -25,12 +30,12 @@ class Avatar extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
             child: Image.asset(
               avatarPic,
-              width: 50,
-              height: 50,
+              width: width,
+              height: height,
             ),
           ),
         ),
-        isStatus == true
+        isStatus
             ? Positioned(
                 right: 0,
                 bottom: 0,

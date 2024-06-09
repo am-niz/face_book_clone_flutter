@@ -8,7 +8,7 @@ class StatusSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Avatar(avatarPic: dq, isStatus: false,),
+      leading: Avatar(avatarPic: dq, isStatus: false, height: 50, width: 50,),
       title: TextField(
         decoration: InputDecoration(
           hintText: "What's on your mind?",

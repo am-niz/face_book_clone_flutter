@@ -2,7 +2,7 @@ import 'package:facebook_clone/assets.dart';
 import 'package:facebook_clone/sections/header_button_section.dart';
 import 'package:facebook_clone/sections/post_card.dart';
 import 'package:facebook_clone/sections/room_secttion.dart';
-import 'package:facebook_clone/sections/status.dart';
+import 'package:facebook_clone/sections/create_status.dart';
 import 'package:facebook_clone/sections/story_section.dart';
 import 'package:facebook_clone/widgets/circular_button.dart';
 import 'package:facebook_clone/widgets/divider.dart';
@@ -49,7 +49,18 @@ class Home extends StatelessWidget {
             MainDivider(thickness: 10),
             StorySection(),
             MainDivider(thickness: 10),
-            PostCard(avatar: dq, isStatus: false, avatarName: 'Dulquer', postTime: '5h',),
+            PostCard(
+              avatar: dq,
+              isStatus: false,
+              avatarName: 'Dulquer',
+              postTime: '5h',
+              posttitile: "Happy Onam",
+              postImage: dq,
+              showBlueTick: true,
+              likes: "10k",
+              comments: "1k",
+              shares: "1k",
+            ),
           ],
         ),
       ),
