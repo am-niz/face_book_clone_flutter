@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:facebook_clone/assets.dart';
 import 'package:facebook_clone/sections/header_button_section.dart';
 import 'package:facebook_clone/sections/post_card.dart';
@@ -9,6 +7,7 @@ import 'package:facebook_clone/sections/story_section.dart';
 import 'package:facebook_clone/widgets/circular_button.dart';
 import 'package:facebook_clone/widgets/divider.dart';
 import 'package:facebook_clone/widgets/header_button.dart';
+import 'package:facebook_clone/widgets/suggestion_section.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -79,37 +78,39 @@ class Home extends StatelessWidget {
             StorySection(),
             MainDivider(thickness: 10),
             PostCard(
-              avatar: dq,
+              avatar: nizam,
               isStatus: false,
-              avatarName: 'Dulquer',
+              avatarName: 'Nizam',
               postTime: '5h',
               posttitile: "Happy Onam",
-              postImage: dq,
+              postImage: nizpost,
               showBlueTick: true,
               likes: "10k",
               comments: "1k",
               shares: "1k",
             ),
             PostCard(
-              avatar: dq,
+              avatar: jazee,
               isStatus: false,
-              avatarName: 'Vinayakan',
+              avatarName: 'Jazeera',
               postTime: '6h',
               posttitile: "",
-              postImage: dq,
-              showBlueTick: true,
+              postImage: jazeepost,
+              showBlueTick: false,
               likes: "1k",
               comments: "1.5k",
               shares: "50k",
             ),
+            SuggestionSection(),
+            MainDivider(thickness: 10),
             PostCard(
-              avatar: dq,
+              avatar: sahir,
               isStatus: false,
-              avatarName: 'dileep',
+              avatarName: 'Sahir',
               postTime: '10h',
               posttitile: dileep,
-              postImage: dq,
-              showBlueTick: true,
+              postImage: sahirpost,
+              showBlueTick: false,
               likes: "109k",
               comments: "19k",
               shares: "13k",

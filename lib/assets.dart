@@ -1,4 +1,11 @@
 String dq = 'assets/avatars/dq.jpg';
+String nizam = 'assets/avatars/nizam.jpg';
+String sahir = 'assets/avatars/sahir.jpg';
+String jazee = "assets/avatars/jazee.jpg";
+String shiva = 'assets/avatars/shiva.jpg';
+String nizpost = 'assets/avatars/niz_post.jpg';
+String jazeepost = 'assets/avatars/jazeepost.jpg';
+String sahirpost = 'assets/avatars/sahirpost.jpg';
 
 //titles
 String dileep =

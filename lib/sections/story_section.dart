@@ -13,10 +13,10 @@ class StorySection extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
-          StoryCard(isOwnStory: true, story: dq, profile: dq, displayBorder: true,),
-          StoryCard(story: dq, storyDescription: "hi how are you", profile: dq, displayBorder: true,),
-          StoryCard(story: dq, storyDescription: "king of kotha", profile: dq, displayBorder: true,),
-          StoryCard(story: dq,storyDescription: "ABCD",profile: dq,),
+          StoryCard(isOwnStory: true, story: nizam, profile: nizpost, displayBorder: true,),
+          StoryCard(story: sahirpost, storyDescription: "hi how are you", profile: sahir, displayBorder: true,),
+          StoryCard(story: jazeepost, storyDescription: "king of kotha", profile: jazee, displayBorder: true,),
+          StoryCard(story: shiva ,storyDescription: "ABCD",profile: shiva,),
           StoryCard(story: dq, storyDescription: "ustad", profile: dq,displayBorder: true,),
         ],
       ),

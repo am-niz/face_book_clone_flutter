@@ -24,7 +24,8 @@ class Avatar extends StatelessWidget {
           decoration: displayBorder
               ? BoxDecoration(
                   border: Border.all(color: Colors.blueAccent, width: 2.0),
-                  shape: BoxShape.circle)
+                  shape: BoxShape.circle,
+                )
               : BoxDecoration(),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(100),
