@@ -26,7 +26,7 @@ This project is a front-end clone of the Facebook home page developed using Flut
 
 Include screenshots or a gif of your app here to show what it looks like.
 
-<img src="screenshots/fb11.png" alt="Screenshot1" width="300"/>
+<img src="screenshots/fb1.png" alt="Screenshot1" width="50%"/>
 <img src="screenshots/fb2.png" alt="Screenshot2" width="300"/>
 <img src="screenshots/fb3.png" alt="Screenshot2" width="300"/>
 
