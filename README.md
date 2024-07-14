@@ -21,13 +21,14 @@ This project is a front-end clone of the Facebook home page developed using Flut
 - Post Feeds
 - Like and Comment UI
 
+
 ## Screenshots
 
 Include screenshots or a gif of your app here to show what it looks like.
 
-![Screenshot1](screenshots/fb1.png)
-![Screenshot2](screenshots/fb2.png)
-![Screenshot2](screenshots/fb3.png)
+<img src="screenshots/screenshot1.png" alt="Screenshot1" width="50%"/>
+<img src="screenshots/screenshot2.png" alt="Screenshot2" width="50%"/>
+
 
 ## Installation
 
